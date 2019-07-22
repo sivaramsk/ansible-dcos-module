@@ -34,7 +34,7 @@
     dcos_package:
       name: kubernetes
       app_id: kubernetes
-      version: 2.2.0-1.13.3
+      version: "{{ mke_version }}"
       state: present
       options:
         {
@@ -104,7 +104,7 @@
     dcos_package:
       name: kubernetes-cluster
       app_id: kubernetes-cluster
-      version: 2.2.0-1.13.3
+      version: "{{ mke_version }}"
       state: present
       options:
         {
